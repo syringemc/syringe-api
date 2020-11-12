@@ -1,6 +1,8 @@
 package org.syringe.api.text;
 
 public class Style {
+    public static final Style EMPTY = new Style.Builder().build();
+
     private final int rgb;
     private final boolean bold;
     private final boolean italic;
