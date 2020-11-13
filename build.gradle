@@ -3,8 +3,8 @@ plugins {
     id 'maven-publish'
 }
 
-group 'org.syringemc'
-version '1.0-SNAPSHOT'
+group project.group
+version project.version
 
 publishing {
     publications {
