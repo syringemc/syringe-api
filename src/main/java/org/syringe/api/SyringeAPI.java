@@ -6,11 +6,13 @@ import org.syringe.api.util.Position;
 import java.util.UUID;
 
 public final class SyringeAPI {
+    public static final String NAMESPACE = "syringe";
+    
     private static API instance;
 
     private SyringeAPI() {}
 
-    static void init(API api) {
+    public static void init(API api) {
         instance = api;
     }
 
