@@ -11,7 +11,9 @@ public class TextBuilder {
     private final String text;
     private final Position position;
     private Style style = Style.EMPTY;
-    private float offset;
+    private float offsetX;
+    private float offsetY;
+    private float scale = 1;
     private long fadein;
     private boolean shadow;
 
@@ -27,8 +29,18 @@ public class TextBuilder {
         return this;
     }
 
-    public TextBuilder offset(float offset) {
-        this.offset = offset;
+    public TextBuilder offsetX(float offsetX) {
+        this.offsetX = offsetX;
+        return this;
+    }
+
+    public TextBuilder offsetY(float offsetY) {
+        this.offsetY = offsetY;
+        return this;
+    }
+
+    public TextBuilder scale(float scale) {
+        this.scale = scale;
         return this;
     }
 
@@ -43,6 +55,6 @@ public class TextBuilder {
     }
 
     public void display() {
-        SyringeAPI.displayText(uuid, key, text, position, style, offset, fadein, shadow);
+        SyringeAPI.displayText(uuid, key, text, position, style, offsetX, offsetY, scale, fadein, shadow);
     }
 }
