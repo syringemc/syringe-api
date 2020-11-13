@@ -1,6 +1,21 @@
 plugins {
     id 'java'
+    id 'maven-publish'
 }
 
 group 'org.syringemc'
 version '1.0-SNAPSHOT'
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            artifact(jar) {
+                builtBy jar
+            }
+        }
+    }
+
+    repositories {
+         mavenLocal()
+    }
+}
