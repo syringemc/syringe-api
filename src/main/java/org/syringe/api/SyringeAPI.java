@@ -10,7 +10,7 @@ public final class SyringeAPI {
 
     private SyringeAPI() {}
 
-    static void init(API api) {
+    public static void init(API api) {
         instance = api;
     }
 
