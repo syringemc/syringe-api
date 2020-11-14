@@ -1,5 +1,7 @@
 package org.syringe.api.text;
 
+import org.syringe.api.util.Color;
+
 public class Style {
     public static final Style EMPTY = new Style.Builder().build();
 
@@ -60,6 +62,11 @@ public class Style {
 
         public Builder rgb(int rgb) {
             this.rgb = rgb;
+            return this;
+        }
+
+        public Builder rgb(Color color) {
+            this.rgb = color.getRgb();
             return this;
         }
 
