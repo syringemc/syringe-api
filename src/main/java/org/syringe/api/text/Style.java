@@ -50,7 +50,7 @@ public class Style {
     }
 
     public static class Builder {
-        private int rgb;
+        private int rgb = 0xffffff;
         private boolean bold;
         private boolean italic;
         private boolean underlined;
