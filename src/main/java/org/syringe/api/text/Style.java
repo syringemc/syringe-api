@@ -65,11 +65,6 @@ public class Style {
             return this;
         }
 
-        public Builder rgb(Color color) {
-            this.rgb = color.getRgb();
-            return this;
-        }
-
         public Builder bold() {
             this.bold = true;
             return this;
