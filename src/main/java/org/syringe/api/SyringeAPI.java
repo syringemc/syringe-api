@@ -24,7 +24,7 @@ public final class SyringeAPI {
         discardText(uuid, key, 0);
     }
 
-    public static void discardText(UUID uuid, String key, float fadeout) {
+    public static void discardText(UUID uuid, String key, long fadeout) {
         instance.discardText(uuid, key, fadeout);
     }
 }
