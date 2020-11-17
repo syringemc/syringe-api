@@ -20,6 +20,10 @@ public final class SyringeAPI {
         instance.displayText(uuid, key, text, position, style, offsetX, offsetY, scale, fadein, shadow);
     }
 
+    public static void discardText(UUID uuid, String key) {
+        discardText(uuid, key, 0);
+    }
+
     public static void discardText(UUID uuid, String key, float fadeout) {
         instance.discardText(uuid, key, fadeout);
     }
