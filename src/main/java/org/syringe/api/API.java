@@ -7,4 +7,6 @@ import java.util.UUID;
 
 public interface API {
     void displayText(UUID uuid, String key, String text, Position position, Style style, float offsetX, float offsetY, float scale, long fadein, boolean shadow);
+
+    void discardText(UUID uuid, String key, float fadeout);
 }
